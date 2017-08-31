@@ -10,8 +10,8 @@ public class Geometry
     /**
      * Returns the area of a triangle
      * 
-     * @param base of a triangle
-     * @param height of a triangle
+     * @param Base base of a triangle
+     * @param Height height of a triangle
      */
     public static double triangleArea(double base, double height) 
     {
@@ -22,8 +22,8 @@ public class Geometry
     /**
      * Returns the area of a rectangle
      * 
-     * @param length of a rectangle
-     * @param width of a rectangle
+     * @param Length length of a rectangle
+     * @param Width width of a rectangle
      */
     public static double rectangleArea(double length, double width) 
     {
@@ -31,7 +31,7 @@ public class Geometry
     }
     /** Returns the volume for a sphere
      * 
-     * @param radius of a sphere
+     * @param Radius radius of a sphere
      */
     public static double sphereVolume(double radius) 
     {
@@ -39,8 +39,8 @@ public class Geometry
     }
     /** Returns the area of a parallelogram 
      * 
-     * @param base of a parallelogram
-     * @param height of a parallelogram
+     * @param Base base of a parallelogram
+     * @param Height height of a parallelogram
      */
     public static double parallelogramArea(double base, double height)
     {
@@ -49,9 +49,9 @@ public class Geometry
     }
     /** Returns the area of a trapezoid
      * 
-     * @param length side a of a trapezoid
-     * @param length side b of a trapezoid
-     * @param height of a trapezoid
+     * @param Length length side a of a trapezoid
+     * @param Length length side b of a trapezoid
+     * @param Height height of a trapezoid
      */
     public static double trapezoidArea(double a, double b, double height)
     {
@@ -60,9 +60,9 @@ public class Geometry
     }
     /** Returns the volume of a rectangular prism
      * 
-     * @param length of a rectangular prism
-     * @param width of a rectangular prism 
-     * @param height of a rectangular prism
+     * @param Length length of a rectangular prism
+     * @param Width width of a rectangular prism 
+     * @param Height height of a rectangular prism
      */
     public static double rectangularprismVolume(double length, double width, double height)
     {
@@ -70,8 +70,8 @@ public class Geometry
     }
     /** Returns the volume of a cone
      * 
-     * @param radius of a cone
-     * @param height of a cone
+     * @param Radius radius of a cone
+     * @param Height height of a cone
      */
     public static double coneVolume(double radius, double height)
     {
@@ -79,9 +79,9 @@ public class Geometry
     }
     /** Returns the surface area of a rectangular prism
      * 
-     * @param length of a rectangular prism
-     * @param width of a rectangular prism 
-     * @param height of a rectangular prism
+     * @param Length length of a rectangular prism
+     * @param Width width of a rectangular prism 
+     * @param Height height of a rectangular prism
      */
     public static double rectangularprismSurfaceArea(double length, double width, double height)
     {
@@ -90,7 +90,7 @@ public class Geometry
     }
     /** Returns the surface area of a sphere
      * 
-     * @param radius of a sphere
+     * @param Radius radius of a sphere
      */
     public static double sphereSurfaceArea(double radius)
     {
@@ -99,7 +99,7 @@ public class Geometry
     }
     /** Returns the hypotenuse "c" of a right triangle
      * 
-     * @param square root of side a and side b
+     * @param Sqaureroot square root of side a and side b
      * @param finds c 
      */
     public static double hypotenuseOfRightTriangle(double a, double b)
@@ -109,7 +109,7 @@ public class Geometry
     }
     /** Returns "d" the distance point 
      * 
-     * @param squareroot x2, x1 plus y2, y1
+     * @param Squareroot squareroot x2, x1 plus y2, y1
      * @param finds d
      */
     public static double distancePoints(double x1, double x2, double y1, double y2)
@@ -119,7 +119,7 @@ public class Geometry
     }
     /** Returns the slope
      * 
-     * @param y2 minus y1 divided by x2 minus x1
+     * @param Slope y2 minus y1 divided by x2 minus x1
      */
     public static double slope(double x1, double y1, double x2, double y2)
     {
@@ -128,9 +128,9 @@ public class Geometry
     }
     /** Returns the area of a 3 sided triangle
      * 
-     * @param adds side a, b, and c together then divides by 2
-     * @param squareroot the whole equation 
-     * @param "s" is half of the triangles perimeter 
+     * @param Adds adds side a, b, and c together then divides by 2
+     * @param Squareroot squareroot the whole equation 
+     * @param S "s" is half of the triangles perimeter 
      */
     public static double triangleArea3(double a, double b, double c)
     {
@@ -140,7 +140,7 @@ public class Geometry
     }
     /** Where everything is added together and named
      * 
-     * @param prints names from formulas
+     * @param Prints prints names from formulas
      */
     public static void main(String[] args) 
     {
