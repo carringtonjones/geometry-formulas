@@ -9,6 +9,7 @@ public class Geometry
 {
     /**
      * Returns the area of a triangle
+     * 
      * @param base of a triangle
      * @param height of a triangle
      */
@@ -20,6 +21,7 @@ public class Geometry
     }
     /**
      * Returns the area of a rectangle
+     * 
      * @param length of a rectangle
      * @param width of a rectangle
      */
@@ -27,8 +29,8 @@ public class Geometry
     {
         return length * width;
     }
-    /**
-     * Returns the volume for a sphere
+    /** Returns the volume for a sphere
+     * 
      * @param radius of a sphere
      */
     public static double sphereVolume(double radius) 
@@ -36,6 +38,7 @@ public class Geometry
         return 4.0 / 3.0 * Math.PI * Math.pow(radius, 3);
     }
     /** Returns the area of a parallelogram 
+     * 
      * @param base of a parallelogram
      * @param height of a parallelogram
      */
@@ -45,6 +48,7 @@ public class Geometry
         return area;
     }
     /** Returns the area of a trapezoid
+     * 
      * @param length side a of a trapezoid
      * @param length side b of a trapezoid
      * @param height of a trapezoid
@@ -55,6 +59,7 @@ public class Geometry
         return area; 
     }
     /** Returns the volume of a rectangular prism
+     * 
      * @param length of a rectangular prism
      * @param width of a rectangular prism 
      * @param height of a rectangular prism
@@ -64,6 +69,7 @@ public class Geometry
         return length * width * height;
     }
     /** Returns the volume of a cone
+     * 
      * @param radius of a cone
      * @param height of a cone
      */
@@ -72,6 +78,7 @@ public class Geometry
         return Math.PI * Math.pow(radius, 2) * height / 3.0; 
     }
     /** Returns the surface area of a rectangular prism
+     * 
      * @param length of a rectangular prism
      * @param width of a rectangular prism 
      * @param height of a rectangular prism
@@ -82,6 +89,7 @@ public class Geometry
         return area;
     }
     /** Returns the surface area of a sphere
+     * 
      * @param radius of a sphere
      */
     public static double sphereSurfaceArea(double radius)
@@ -89,8 +97,29 @@ public class Geometry
         double area = 4.0 * Math.PI * Math.pow(radius, 2);
         return area;
     }
+    /** Returns the hypotenuse "c" of a right triangle
+     * 
+     * @param square root of side a and side b
+     * @param find c 
+     */
+    public static double hypotenuseOfRightTriangle(double a, double b)
+    {
+        double c = Math.sqrt((Math.pow(a, 2) + (Math.pow(b, 2))));
+        return c;
+    }
+    /** Returns "d" the distance point 
+     * 
+     * @param square root x2 and x1 plus y2 and y1
+     * @param find d
+     */
+    public static double distancePoints(double x1, double x2, double y1, double y2)
+    {
+        double d = Math.sqrt((Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));
+        return d;
+    }
     /** Where everything is added together and named
      * 
+     * @param prints names form formulas
      */
     public static void main(String[] args) 
     {
@@ -123,5 +152,11 @@ public class Geometry
         
         double spsa1 = sphereSurfaceArea(6);
         System.out.println("Sphere Surface Area: " + spsa1); 
+        
+        double hypotrt1 = hypotenuseOfRightTriangle(6, 7);
+        System.out.println("Hypotenuse of Triangle: " + hypotrt1);
+        
+        double dp1 = distancePoints(2, 7, 6, 3);
+        System.out.println("Distance Point: " + dp1);
     }
 }
