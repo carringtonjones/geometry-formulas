@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Geometry here.
+ * Geometry Formulas
  * 
  * @author Carrington Jones
  * @version August 30, 2017
@@ -100,7 +100,7 @@ public class Geometry
     /** Returns the hypotenuse "c" of a right triangle
      * 
      * @param square root of side a and side b
-     * @param find c 
+     * @param finds c 
      */
     public static double hypotenuseOfRightTriangle(double a, double b)
     {
@@ -109,17 +109,38 @@ public class Geometry
     }
     /** Returns "d" the distance point 
      * 
-     * @param square root x2 and x1 plus y2 and y1
-     * @param find d
+     * @param squareroot x2, x1 plus y2, y1
+     * @param finds d
      */
     public static double distancePoints(double x1, double x2, double y1, double y2)
     {
         double d = Math.sqrt((Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));
         return d;
     }
+    /** Returns the slope
+     * 
+     * @param y2 minus y1 divided by x2 minus x1
+     */
+    public static double slope(double x1, double y1, double x2, double y2)
+    {
+        double slope = (y2 - y1) / (x2 - x1);
+        return slope;
+    }
+    /** Returns the area of a 3 sided triangle
+     * 
+     * @param adds side a, b, and c together then divides by 2
+     * @param squareroot the whole equation 
+     * @param "s" is half of the triangles perimeter 
+     */
+    public static double triangleArea3(double a, double b, double c)
+    {
+        double s = (a + b + c) / 2.0;
+        double area = Math.sqrt(s*(s - a) * (s - b) * (s - c));
+        return area;
+    }
     /** Where everything is added together and named
      * 
-     * @param prints names form formulas
+     * @param prints names from formulas
      */
     public static void main(String[] args) 
     {
@@ -158,5 +179,11 @@ public class Geometry
         
         double dp1 = distancePoints(2, 7, 6, 3);
         System.out.println("Distance Point: " + dp1);
+        
+        double sl1 = slope(6, 9, 1, 0);
+        System.out.println("Slope: " + sl1);
+        
+        double tria = triangleArea3(6, 15, 20);
+        System.out.println("Triangle Area (3 sides): " + tria);
     }
 }
